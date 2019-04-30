@@ -5,6 +5,7 @@ const fetch = require('node-fetch');
 const command = process.argv[2]//se ingresa comando en la terminal me toma desde la posicion 2
 const markdownLinkExtractor = require('markdown-link-extractor');
 const mdLinks = require('./md-links');
+const pathIsAbsolute = require('path-is-absolute');
 //const markdown = fs.readFileSync(command).toString();//convierte en string
 
 //const FileHound = require('filehound');
@@ -27,7 +28,13 @@ const links = markdownLinkExtractor(res);
 links.forEach(function (links) {
     fetch(links)
     .then((res)=>{
-        console.log(res.url + " " + res.status+ " " + res.statusText);
+        let result = {}
+        result.link = res.url
+        result.status = res.status
+        result.statusText = res.statusText
+        console.log(result)
+
+       // console.log(res.url + " " + res.status+ " " + res.statusText);
     })
     
         .catch(error =>{
