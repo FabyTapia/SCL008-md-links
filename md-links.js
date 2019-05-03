@@ -20,9 +20,11 @@ const readAFile = (file, type) =>{
 }
 
 
+
 readAFile(command, "utf-8")
 .then(res =>{
 const links = markdownLinkExtractor(res);
+
 
 
 links.forEach(function (links) {
@@ -42,7 +44,8 @@ links.forEach(function (links) {
         })
     });
 })
-exports.readAFile = readAFile;
+
+module.exports.readAFile = readAFile;
 
 /*
 const files = FileHound.create()

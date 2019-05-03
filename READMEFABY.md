@@ -12,15 +12,24 @@ Markdown es un lenguaje de marcado ligero muy popular entre developers. Es usado
 
 **CLI:** npm install "github:FabyTapia/SCL008-md-links"
 
-#Usabilidad
+# Usabilidad
 
 **CLI:** md-links README.md --validate
+
+![command.png](/command.png)
+
+# Resultado 
+
+![result-comand2.png](/result-comand2.png)
+
 
 ` { link: 'https://semver.org/', status: 200, statusText: 'OK' }
 { link: 'https://es.wikipedia.org/wiki/Markdown',
   status: 200,
   statusText: 'OK' } `
 
+ 
+ 
   # Planificacion
 
 https://trello.com/b/G1XssPNA/markdown-links

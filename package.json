@@ -1,6 +1,7 @@
 {
   "name": "md-links",
   "version": "0.1.0",
+  "main": "index.js",
   "bin": {
     "md-links": "index.js"
   },
