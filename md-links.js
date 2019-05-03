@@ -28,14 +28,14 @@ const links = markdownLinkExtractor(res);
 links.forEach(function (links) {
     fetch(links)
     .then((res)=>{
-        let result = {}
-        result.link = res.url
+        //let result = {}
+        /*result.link = res.url
         result.status = res.status
         result.statusText = res.statusText
         console.log(result)
-       // path.resolve(command)
+     */
 
-       // console.log(res.url + " " + res.status+ " " + res.statusText);
+       console.log(path.resolve(command),res.url, res.status, res.statusText);
     })
     
         .catch(error =>{
