@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 const mdLinks = require('./md-links');
-/*
 
+/*
 mdLinks("./some/example.md")
   .then(links => {
     // => [{ href, text, file }]
